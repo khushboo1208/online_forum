@@ -1,0 +1,41 @@
+<html>
+<head><style>
+#box
+  {
+   border-radius:25px 25px 25px 25px;
+	//border-style: solid;
+	border-color: #FF9900;
+	border-width: 10px;
+  }
+  
+  .des{
+     border-style: groove;
+  }
+  
+  
+	#btn2{
+
+	height:35px;
+	width:180px;
+	font-size:20px;
+	}
+  </style>
+</head>
+<body bgcolor="#330000">
+<div id="abc" style="position:absolute; height:20%; left:1%; top:1%; width:98%; background-color:#FF9900;">
+<h1><font color="white"> PERSONAL DIARY </font></h1></div>
+<div id="box" class="des" style="position:absolute; height:45%; left:20%; top:34%; width:60%;  ">
+<div style="position:absolute; height:12%; left:4%; top:10%; width:92%; background-color:#FF9900;  ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="white" size="5%" face="Calibri">
+<b>FORGOT PASSWORD</b></font>
+</div>
+<div style="position:absolute; height:70%; left:4%; top:28%; width:90%; ">
+<p style="font-family:Calibri;"><font color="white" size="4%"><b>Please provide your e-mail address,you used during sign-up. </b></font></p>
+<form action="PHPMailer-master/examples/gmail.php" method="post" enctype="multipart/form-data">
+
+<table>  
+<tr><td><p style="font-family:Calibri;"><font color="white" size="6%">Email ID </font></p></td>  <td><font color="white" size="6%"> &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td> <td>  <input type="text" name="eid1" size="32" required/> </td> </tr> </table>
+<div style="position:absolute;  left:26%; top:56%; ">
+<button id="btn2"  type="submit" ><font color="red" size="3%"><b>GET PASSWORD</b></font></button>  </form> </div> </div>
+</div>
+</body></html>

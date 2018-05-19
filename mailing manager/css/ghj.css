@@ -1,0 +1,30 @@
+@import url("aabb.css");
+.qwe {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: underline;
+	background-color: #0000FF;
+}
+.unnn {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: #990000;
+}
+.unnamed7 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: #993399;
+}
+.unnamed1 {
+	background-color: #00FF00;
+	color: #0000CC;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+}

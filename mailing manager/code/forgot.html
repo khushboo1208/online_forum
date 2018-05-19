@@ -1,0 +1,92 @@
+<html>
+<style>
+  /*div{
+    width:200px;
+	height:100px;
+	background: -moz-linear-gradient(left,red,blue,red);
+  }*/
+  #btn{
+    background: -moz-linear-gradient(left,#000099,#000099);
+	background: -webkit-linear-gradient(left,#000099,#000099);
+	background: -o-linear-gradient(left,#000099,#000099);
+	background: -ms-linear-gradient(left,#000099,#000099);
+	background: linear-gradient(left,#000099,#000099);
+	width:200px;
+	height:55px;
+	
+	
+	border-radius:4px 4px 4px 4px;
+	
+  }
+</style>
+<!--
+ <head>
+<script>
+function PostData() {
+    // 1. Create XHR instance - Start
+    var xhr;
+    if (window.XMLHttpRequest) {
+        xhr = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) {
+        xhr = new ActiveXObject("Msxml2.XMLHTTP");
+    }
+    else {
+        throw new Error("Ajax is not supported by this browser");
+    }
+    // 1. Create XHR instance - End
+    
+    // 2. Define what to do when XHR feed you the response from the server - Start
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status == 200 && xhr.status < 300) {
+                document.getElementById('div1').innerHTML = xhr.responseText;
+            }
+        }
+    }
+    // 2. Define what to do when XHR feed you the response from the server - Start
+
+    var userid = document.getElementById("userid").value;
+
+    // 3. Specify your action, location and Send to the server - Start 
+    xhr.open('POST', 'forgotac.php');
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send("userid=" +userid);
+    // 3. Specify your action, location and Send to the server - End
+}
+</script>
+</head>       -->
+ <link href="aa.css" rel="stylesheet" type="text/css">
+ <style type="text/css">
+ .aa {
+	font-size: 24px;
+	color: #009;
+	text-decoration: blink;
+	background-color: #090;
+}
+ body {
+	background-color: #FF99CC;
+}
+</style>
+
+<body>
+
+<h1> <center>  FORGOT PASSWORD ??????</center> </h1>
+<br>
+<form action="forgotac.php" method="post">
+<h2>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+Enter your user_id : <input type="text" name="userid"  id="userid" size="30px" required/>
+
+ 
+<div style="margin-left:400px;">
+<br>
+<br><br>
+<button id="btn"><font color="#009900" size="5px">Continue</font></button>
+
+</div>
+
+</form>
+
+</body>
+</html>
