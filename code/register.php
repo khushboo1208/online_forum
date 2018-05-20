@@ -64,7 +64,7 @@ exit();
 }
 if($flag==0)
 { echo '<script language="javascript">';
-echo 'alert(" YOU HAVE ENTERED INCORRECT PASSWORD")';
+echo 'alert("Please Register")';
 echo '</script>';
 header('Refresh:1; url=registration.php');
 exit();

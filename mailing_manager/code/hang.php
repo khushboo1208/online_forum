@@ -10,7 +10,7 @@ body {
 <?php
 session_start();
 
-$con=mysqli_connect('localhost','root','','mailstore');
+$con=mysqli_connect('localhost','root','mysql','mailstore');
 mysqli_select_db($con,'mailstore');
 
 $v=$_SESSION['value'];
@@ -71,7 +71,7 @@ print_r($a);
 <?php
 
 
-$con=mysqli_connect('localhost','root','','mailstore');
+$con=mysqli_connect('localhost','root','mysql','mailstore');
 mysqli_select_db($con,'mailstore');
 
 $va=$_SESSION['value'];
@@ -118,7 +118,7 @@ $am2=array();
 $s =  array_unique($_SESSION['src']);
 //print_r($s);
 //echo $s;
-$con=mysqli_connect('localhost','root','','mailstore');
+$con=mysqli_connect('localhost','root','mysql','mailstore');
 mysqli_select_db($con,'mailstore');
 
 $r=$_SESSION['value'];
