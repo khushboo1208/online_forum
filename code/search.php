@@ -1,5 +1,5 @@
 <?php
-mysql_connect("localhost","root","") or die("could not connect");
+mysql_connect("localhost","root","mysql") or die("could not connect");
 mysql_select_db("discuss") or die("could not find db");
 $output='';
 //collect
@@ -12,7 +12,7 @@ if($count == 0) {
 $output="no search results";
 } else {
 while($row=mysql_fetch_array($query))  {
-$ipc=$row[3];
+$ipc=$row[2];
 
 
 $output .='<div>'.$ipc.'</div>';

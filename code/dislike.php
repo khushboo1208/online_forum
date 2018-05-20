@@ -11,7 +11,7 @@ $z=$_REQUEST['p'];
 //echo $e;
 $flag=0;
 
-$con=mysqli_connect('localhost','root','','mailstore') or die(mysqli_error($con));
+$con=mysqli_connect('localhost','root','mysql','mailstore') or die(mysqli_error($con));
 $se1="select Emailid,Password from detailtb";
 $q1=mysqli_query($con,$se1);
 while($d1=mysqli_fetch_array($q1))

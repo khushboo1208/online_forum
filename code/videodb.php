@@ -4,14 +4,14 @@ session_start();
 include('conn.php');
 
 $cn=mysqli_real_escape_string($conn,$_SESSION['video']);
-//$a=mysqli_real_escape_string($conn,$_SESSION['value']);
+$a=mysqli_real_escape_string($conn,$_SESSION['value']);
 $m=mysqli_real_escape_string($conn,$_REQUEST['id1']);
 $b=mysqli_real_escape_string($conn,$_REQUEST['p1']);
 $c=mysqli_real_escape_string($conn,$_REQUEST['area2']);
 $flag=0;
 				 
 				 
-$con=mysqli_connect('localhost','root','','mailstore') or die("connection fail");     //database specified here
+$con=mysqli_connect('localhost','root','mysql','mailstore') or die("connection fail");     //database specified here
 $s="select Emailid,Password from detailtb";
 
 $d=mysqli_query($con,$s);
@@ -35,7 +35,8 @@ while ($row=mysqli_fetch_array($d))
 	  echo '<script language="javascript">';
                  //echo 'alert(" id exists")';
                  echo '</script>';
-	 $ins="insert into commenttb(content,Emailid,comment,flag) values ('".$cn."','".$m."','".$c."','v')";
+	 $ins="insert into commenttb(content,category,Emailid,comment,flag) values ('".$cn."','".$a."','".$m."','".$c."','v')";
+     //print_r($ins);
 	 $in=mysqli_query($conn,$ins);
 
            if($in)
@@ -59,7 +60,7 @@ if($flag==0)
 echo '<script language="javascript">';
             echo 'alert(" You have not registered yourself yet. Kindly visit About us")';
             echo '</script>';
-			header('Refresh:0;url=main.php');
+			//header('Refresh:0;url=main.php');
 
 }
 ?>

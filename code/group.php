@@ -58,7 +58,7 @@ Group
   <th> <font FACE='AR JULIAN' size='5%' color='blue'> <i>CREATED ON</i></font></th></tr> 
 <?php
 include('conn.php');
- 
+
 $s="SELECT  `groupname`,`message`,`date` FROM `group` where `flag`='d' order by `id` desc ";
 $m=mysqli_query($conn,$s);
 while($data=mysqli_fetch_array($m))

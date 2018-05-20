@@ -31,7 +31,7 @@ $r=mysqli_real_escape_string($conn,$_REQUEST['ct']);
 
 if($i==$j)
 {   
-$con=mysqli_connect('localhost','root','','mailstore') or die(mysqli_error($con));
+$con=mysqli_connect('localhost','root','mysql','mailstore') or die(mysqli_error($con));
 $select="select Emailid from detailtb where Emailid='".$h."'";
 //echo $select;
 $query=mysqli_query($con,$select);

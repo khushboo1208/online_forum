@@ -1,8 +1,5 @@
 <?php
 include('home.php');
-
-
-
 ?>
 <html>
 <head>

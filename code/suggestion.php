@@ -11,7 +11,7 @@ $c=mysqli_real_escape_string($conn,$_REQUEST['suggestion']);
 $flag=0;
 				 
 				 
-$con=mysqli_connect('localhost','root','','mailstore') or die("connection fail");     //database specified here
+$con=mysqli_connect('localhost','root','mysql','mailstore') or die("connection fail");     //database specified here
 $s="select Emailid,Password from detailtb";
 
 $d=mysqli_query($con,$s);

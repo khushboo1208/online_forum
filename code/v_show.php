@@ -104,7 +104,7 @@ border-color:black;
   
   $ses=$row[1];
  
- $con=mysqli_connect('localhost','root','','mailstore') or die(mysqli_error($con));
+ $con=mysqli_connect('localhost','root','mysql','mailstore') or die(mysqli_error($con));
  $select="select profile_image from detailtb where Emailid='$ses'";
  $m=mysqli_query($con,$select);
  while($data=mysqli_fetch_array($m))

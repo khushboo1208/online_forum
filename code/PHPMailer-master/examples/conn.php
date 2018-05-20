@@ -1,5 +1,5 @@
 <?php
 
-$conn=mysqli_connect('localhost','root','','discuss');
+$conn=mysqli_connect('localhost','root','mysql','discuss');
 
 ?>

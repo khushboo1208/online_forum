@@ -18,6 +18,7 @@ $h=$_SESSION['head']=$_GET["id"];
 </center>
  <table> 
 <?php
+
 $se="select developer_sol.solution,sum(agree),sum(disagree) from sol_choice,developer_sol where sol_choice.solution=developer_sol.solution and developer_sol.headline='".$h."' and counter='s1'";
 $q=mysqli_query($conn,$se) or die(mysqli_error($conn));
 

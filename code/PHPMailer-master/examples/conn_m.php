@@ -1,4 +1,4 @@
 <?php
-$con=mysqli_connect('localhost','root','','mailstore');
+$con=mysqli_connect('localhost','root','mysql','mailstore');
 
 ?>

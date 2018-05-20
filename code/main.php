@@ -1,7 +1,3 @@
-<?php
-include('home.php');
-include('conn.php');
-?>
 <html>
 <head>
 <title>
@@ -11,20 +7,19 @@ Homepage
 a.ex1:hover, a.ex1:hover {color: red; font-size: 150%;}
 </style>
 <style>
- 
   #btn{
-   
 	border-radius:15px 15px 15px 15px;
 	border-style: solid;
 	border-color:black;
-
-	
   }
 </style>
 
 </head>
 <body>
-
+<?php
+include('home.php');
+include('conn.php');
+?>
 <div id="container" style="position:absolute; background-color:#FFA8A8; height:17%; left:0%;top:14%; width:100%;">
 <br>
 <br>
@@ -111,7 +106,7 @@ while($q=mysqli_fetch_array($y))
 <font color="#FFFF99">
 <?php
 include('conn.php');
-$sel="select distinct(headline) from developer_sol order by sno desc";
+$sel="select distinct(headline) from developer_sol";
 $qu=mysqli_query($conn,$sel);
 while($r=mysqli_fetch_array($qu))
 {  echo $r[0]."<br><br>";

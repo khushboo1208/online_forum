@@ -1,5 +1,3 @@
-<html>
-<body>
 <div id="container" style="position:absolute; background-color:#FFA8A8; height:15%; left:0%;top:0%; width:100%;">  <!--  -->
   <div id="container" style="float:left; margin-top:1%; margin-left:3%;">
   <a href="main.php"><img src="../picture/home_f.png"  width="63" height="63"></a>
@@ -17,7 +15,6 @@
   <img src="../picture/letstalk.png" width="150" height="96">
   </div>
   <div id="container" style="position:absolute; margin-left:90%; margin-top:-6%; "> 
- <a href="three.html"> <img src="../picture/law.png" width="80" height="70"></a>
+ <a href="three.php"> <img src="../picture/law.png" width="80" height="70"></a>
   </div>
 </div>
-</body>

@@ -11,7 +11,7 @@ $time=date_default_timezone_set("Asia/Calcutta");
  $date1=date('y-m-d');
 //$date=date("h:i:sa");
 
-$con=mysqli_connect('localhost','root','','mailstore') or die("connection fail");     //database specified here
+$con=mysqli_connect('localhost','root','mysql','mailstore') or die("connection fail");     //database specified here
 $s="select Emailid,Password from detailtb where Emailid='".$e."' and Password='".$p."' ";
 $da=mysqli_query($con,$s);
 

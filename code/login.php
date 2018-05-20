@@ -39,10 +39,10 @@
 <h1><font color="white"> PERSONAL DIARY </font></h1></div>
 <div id="box" class="des" style="position:absolute; height:67%; left:10%; top:27%; width:80%;  ">
 <div style="position:absolute; left:65%; top:7%;">
-<form action="three.html" method="post">
+<form action="three.php" method="post">
 <button id="btn"  type="submit" ><font color="red" size="3%"><b>BACK</b></font></button>  </form> </div> 
 <div style="position:absolute; left:76%; top:7%;">
-<form action="forgot.html" method="post">   <button id="btn2"  type="submit" ><font color="red" size="3%"><b>FORGOT PASSWORD</b></font></button>  </form>
+<form action="forgot.html" method="get">   <button id="btn2"  type="submit" ><font color="red" size="3%"><b>FORGOT PASSWORD</b></font></button>  </form>
 </div>
 <div style="position:absolute; height:10%; left:3%; top:20%; width:94%; background-color:#FF9900;  padding-top:5px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <font color="white" size="5%" face="Calibri">

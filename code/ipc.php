@@ -16,8 +16,8 @@ $(function(){
 	var vl = document.getElementById('f1').value;
 		
 		$.ajax({
-			url: "search.html",
-			type: "POST",
+			url: "search1.html",
+			type: "GET",
 			
 		}).done(function( html ) {
     $( "#demo" ).html( html );
@@ -77,7 +77,7 @@ $(function(){
 <div id="abc3" style="position:absolute;  left:38%; "><button id="f2" class="btn" type="submit" onclick="loadDoc2()" ><font color="red" size="3%">ALL IPC</font></button></div>
 <div id="abc8" style="position:absolute;  left:49%; "><button id="f3" class="btn" type="submit" onclick="loadDoc3()" ><font color="red" size="3%">IPC BY EVENT</font></button></div>
 <div id="abc4" style="position:absolute;  left:63%; "><a href="main.php" ><button  class="btn" type="submit" name="search2"><font color="red" size="3%">HOME</font></button></a></div>
-<div id="abc5" style="position:absolute;  left:73%; "><a href="three.html" ><button  class="btn" type="submit" name="search3"><font color="red" size="3%">BACK</font></button></a></div>
+<div id="abc5" style="position:absolute;  left:73%; "><a href="three.php" ><button  class="btn" type="submit" name="search3"><font color="red" size="3%">BACK</font></button></a></div>
 <div id="demo">
 <div id="abc6" style="position:absolute; height:30%; left:5%; top:35%; width:55%; "><font color="#FF0099">
 <p align="justify">

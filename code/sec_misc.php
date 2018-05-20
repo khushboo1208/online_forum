@@ -2,7 +2,7 @@
 <?php
 include('conn.php');
 
-$se1="select distinct(headline) from developer_sol where category='MISCELLANOUS' order by sno desc";
+$se1="select distinct(headline) from developer_sol where category='MISCELLANOUS'";
  $q1=mysqli_query($conn,$se1) or die(mysqli_error($conn));
  while($r1=mysqli_fetch_array($q1))
  {  ?> <br><br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -16,7 +16,7 @@
 <div id="abc2" style="position:absolute;  left:30%; "><button id="btn" type="button" onclick="loadDoc('search.html',myFunction)"><font color="red" size="3%">SEARCH IPC</font></button></div>
 <div id="abc3" style="position:absolute;  left:43%; "><a href="allipc.php" ><button id="btn" type="submit" ><font color="red" size="3%">ALL IPC</font></button></a></div>
 <div id="abc4" style="position:absolute;  left:53%; "><a href="main.php" ><button id="btn" type="submit" name="search2"><font color="red" size="3%">HOME</font></button></a></div>
-<div id="abc5" style="position:absolute;  left:63%; "><a href="three.html" ><button id="btn" type="submit" name="search3"><font color="red" size="3%">BACK</font></button></a></div>
+<div id="abc5" style="position:absolute;  left:63%; "><a href="three.php" ><button id="btn" type="submit" name="search3"><font color="red" size="3%">BACK</font></button></a></div>
 <div id="demo">
 <div id="abc6" style="position:absolute; height:30%; left:5%; top:35%; width:55%; "><font color="#FF0099">
 <p align="justify">

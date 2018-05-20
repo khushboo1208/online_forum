@@ -36,7 +36,7 @@ color:red;
 include('conn.php');
 session_start();
 $a=$_SESSION['value'];
-$s="select cno,cdate,cname from client_details where lawyerid='".$a."' order by sno desc";
+$s="select cno,cdate,cname from client_details where lawyerid='".$a."' order by id desc";
 $q=mysqli_query($conn,$s);
 while($r=mysqli_fetch_array($q))
 {   ?>

@@ -20,7 +20,7 @@ th {text-align: left;}
 <?php
 $q1 = intval($_GET['q']);
 
-$con = mysqli_connect('localhost','root','','discuss');
+$con = mysqli_connect('localhost','root','mysql','discuss');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
@@ -44,10 +44,10 @@ echo "<table>
 //}
 while($row = mysqli_fetch_array($result)) {
     echo "<tr>";
+    echo "<td>" . $row[0] . "</td>";
     echo "<td>" . $row[1] . "</td>";
     echo "<td>" . $row[2] . "</td>";
     echo "<td>" . $row[3] . "</td>";
-    echo "<td>" . $row[4] . "</td>";
     
     echo "</tr>";
 }

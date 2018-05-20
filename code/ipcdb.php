@@ -12,10 +12,10 @@ $q=mysqli_query($conn,$sel);
 while($w=mysqli_fetch_array($q))
 { 
 
-echo "<br><center><font FACE='AR JULIAN' size='6.5%' color='red'>"."Chapter -"."&nbsp;".$w[1]."</font></center>";
-echo "&nbsp;&nbsp;&nbsp;<font FACE='AR JULIAN' size='6.5%' color='red'>"."Section -"."&nbsp;".$w[2]."</font>";
-echo "<center><font FACE='AR JULIAN' size='6.5%' color='red'><u>".$w[3]."</u></font></center><br><br>";
-echo "<center><font  size='5.5%' color='red'>".$w[4]."</font></center>";
+echo "<br><center><font FACE='AR JULIAN' size='6.5%' color='red'>"."Chapter -"."&nbsp;".$w[0]."</font></center>";
+echo "&nbsp;&nbsp;&nbsp;<font FACE='AR JULIAN' size='6.5%' color='red'>"."Section -"."&nbsp;".$w[1]."</font>";
+echo "<center><font FACE='AR JULIAN' size='6.5%' color='red'><u>".$w[2]."</u></font></center><br><br>";
+echo "<center><font  size='5.5%' color='red'>".$w[3]."</font></center>";
 
 $flag=1;
 }

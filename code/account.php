@@ -114,7 +114,7 @@ echo $data[0];
 <div id="abc3" style="position:absolute;  left:39%; "><button id="f2" class="btn" type="button" onclick="loadDoc2()" ><font color="red" size="3%">NEW CASE</font></button></div>
 <div id="abc8" style="position:absolute;  left:52%; "><a href="profile.php" ><button id="f3" class="btn" type="submit" ><font color="red" size="3%">PROFILE</font></button></a></div>
 <div id="abc4" style="position:absolute;  left:64%; "><a href="main.php" ><button  class="btn" type="submit" name="search2"><font color="red" size="3%">HOME</font></button></a></div>
-<div id="abc5" style="position:absolute;  left:74%; "><a href="three.html" ><button  class="btn" type="submit" name="search3"><font color="red" size="3%">BACK</font></button></a></div>
+<div id="abc5" style="position:absolute;  left:74%; "><a href="three.php" ><button  class="btn" type="submit" name="search3"><font color="red" size="3%">BACK</font></button></a></div>
 </div>
 <div id="demo">
 </div>
